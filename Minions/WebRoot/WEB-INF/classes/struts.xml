@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="abstract_struts" abstract="true" extends="struts-default" namespace="/">
+	  	<interceptors>
+ 			<interceptor name="AdminLog" class="adminLogInterceptor"></interceptor>
+			<interceptor-stack name="myInterceptor">
+			    <interceptor-ref name="defaultStack" />
+			    <interceptor-ref name="AdminLog" />
+			</interceptor-stack>
+		</interceptors> 
+
+		 <default-interceptor-ref name="myInterceptor" />
+
+		<global-results>
+			<result name="nouser" type="redirect">/login.jsp</result>
+			<result name="nopower" type="redirect">/nopower.jsp</result>
+			
+		</global-results>
+	</package>
+
+
+
+
+	<package name="findGoodsPackage" extends="struts-default" namespace="/findGoods">
+		<action name="search_*" class="searchGoodsByWordAction" method="{1}">
+			<result name="goSearchJsp">
+				/search.jsp
+			</result>
+			<result name="goPicSearchJsp">
+				/picsearch.jsp
+			</result>
+			
+		</action>
+		<action name="shouye_*" class="shouyeAction" method="{1}">
+			<result name="gotoShouye"  type="redirect">
+				/shouye.jsp
+			</result>
+		</action>
+	
+		
+		
+	</package>
+	<package name="goodsInformation" extends="struts-default" namespace="/getGoodsInfo">
+		<action name="getGoodsInfo_*" class="goodsAction" method="{1}">
+			<result name="goodsInformation" > 
+				/shangpin.jsp
+			</result>
+		</action>
+	</package>
+	<package name="user" extends="struts-default" namespace="/user">
+		<interceptors>
+			<interceptor name="permission"
+				class="com.minions.struts.intercepter.PermissionIntercepter" />
+			<interceptor-stack name="permissionStack">
+				<interceptor-ref name="defaultStack" />
+				<interceptor-ref name="permission" />
+			</interceptor-stack>
+		</interceptors>
+
+		<global-results>
+			<result name="unlogin">/denglu.jsp</result>
+		</global-results>
+		
+		<action name="login_*" class="usersAction" method="{1}">
+			<result name="success"  type="redirect">/shouye.jsp</result>
+			<result name="failure"  type="redirect">/denglu.jsp</result>
+			<result name="checked" type="redirectAction">
+				<param name="namespace">/user</param>
+				<param name="actionName">addGoods_addUserGoods</param>
+			</result>
+		</action>
+		<action name="addGoods_*" class="userGoodsAction" method="{1}">
+			<result name="success">/chenggongxinxi.jsp</result>
+			<result name="check">/wodegouwuche.jsp</result>
+			<result name="delete">/wodegouwuche.jsp</result>
+			<interceptor-ref name="permissionStack" />
+		</action>
+		
+		<action name="register_*" class="registerAction" method="{1}">
+			<result name="register">/cg.jsp</result>
+			<result name="onRegister">/zhuce.jsp</result>
+		</action>
+	</package>
+	
+	<package name="goodsContent" extends="struts-default" namespace="/goodsContent">
+		<action name="doContent_*" method="{1}" class="goodsContentAction" >
+			<result name="content">/kindeditor/jsp/demo.jsp</result>
+			<result name="updateGoods">/kindeditor/jsp/demo.jsp</result>
+			<result name="allGoods">/xiugaishangping.jsp</result>
+		</action>
+		<action name="goodsEvalute_*" method="{1}" class="evaluteGoodsAction">
+			<result name="evaluteGoods">/pingjia.jsp</result>
+		</action>
+	</package>
+	<package name="admin" extends="abstract_struts" namespace="/admin">
+		<action name="editshouye_*" class="editShouyeAction" method="{1}">
+			<result name="gotoShouye" type="redirect">
+				/editshouye.jsp
+			</result>
+			<result name="editgonggaojsp" type="redirect">
+				/editgonggao.jsp
+			</result>
+			
+		</action>
+		<action name="editbanner_*" class="saveEditShouyeAction" method="{1}">
+		    <result type="redirectAction" name="goeditShouye">
+				editshouye_getBanners
+			</result> 
+			<result type="redirect" name="savesuccess">
+				/savesuccess.jsp
+			</result> 
+			
+			
+		</action>
+		<action name="admin_*" class="adminLoginAction" method="{1}">
+			<result name="gotoAdminJsp"  type="redirect">
+			/guanli.jsp
+			</result>
+			<result name="goback"  type="redirect">
+			/login.jsp
+			</result>
+			<result name="goshowadmin"  type="redirect">
+			/showadmin.jsp
+			</result>
+			<result  type="redirectAction" name="dodelete">
+			admin_showAdmin
+			</result>
+			<result name="goeditpower"  type="redirect">
+			/editpower.jsp
+			</result>
+			<result  type="redirectAction" name="goeditpowerjsp">
+			admin_showAdminPower
+			</result>
+			<result  type="redirect" name="goadminlogjsp">
+			/adminlog.jsp
+			</result>
+			<result  type="redirect" name="gousersgoodsjsp">
+			/showusergoods.jsp
+			</result>
+			<result  type="redirectAction" name="saveusersgoods">
+			admin_getUsersGoods
+			</result>
+		</action>
+	
+	
+	</package>
+</struts>    

@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+.goods{
+	color:#888;
+	font-size:12px;
+	height:40px;
+	vertical-align:top;
+	text-align:left;
+	font-family:"微软雅黑";
+	}
+.good a{
+	text-decoration:none;
+	color:#888;
+	font-family:"微软雅黑";
+	}
+.good a:hover{
+	color:#F00;
+	}
+.goods img{
+	border:#FFF 1px solid;
+	}
+.goods a:hover img{
+	border:#F00 1px solid;
+	}
+	
+#search{
+	margin:10px auto 10px auto;
+	width:960px;  
+	font-size:14px;
+	color:#888888;	
+	font-family:"微软雅黑";
+	
+	}
+#search a{
+	font-size:14px;
+	color:#333333;	
+	font-family:"微软雅黑";
+	margin:auto 8px auto 8px;
+	text-decoration:none;
+	
+	}
+#search a:hover{
+	font-size:14px;
+	color:#F00;	
+	font-family:"微软雅黑";
+	text-decoration:none;
+	
+	}

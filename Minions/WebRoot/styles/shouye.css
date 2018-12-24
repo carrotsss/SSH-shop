@@ -1,0 +1,630 @@
+@charset "gb2312";
+/* CSS Document */
+
+.floor_div{
+	width:960px;
+	height:38px;
+	border-bottom:2px solid #373737;
+	margin:0px auto 10px auto;
+	position:relative;
+	}                                 /*楼层外层的  div   统一类*/
+
+
+.floor{
+	width:25px;
+	height:38px;
+	float:left;
+	color:#F00;
+ 	text-align:left;
+	font-size:17px;
+	line-height:50px;
+	font-weight:bold;
+		}                             /*楼层号码  统一类*/
+.floor_name{  
+	width:110px;
+	height:38px;
+	float:left;
+	color:#333;
+	font-family:tahoma,verdana,arial,helvetica,sans-serif;
+	font-size:17px;
+	line-height:50px;
+	font-weight:bold;
+	}                                /*楼层内容  统一类*/
+	
+.floor_more{
+	width:400px;
+	height:38px;
+	line-height:50px;
+	float:right;
+	text-align:right;
+	}                               /*楼层更多选项  统一类*/
+.floor_more a{
+	text-decoration:none;
+	font-family:"宋体";
+	color:#868686;
+	font-size:12px;
+	}
+.floor_more a:hover{
+	color:#F00;
+	}
+.floor_gengduo{
+	line-height:50px;
+	text-align:right;
+	font-family:"宋体";
+	color:#f00;
+	font-size:12px;
+	}                              /*楼层更多两字  统一类*/
+.floor_gengduo a{
+	text-decoration:none;
+	font-family:"宋体";
+	color:#f00;
+	font-size:12px;
+	}
+	
+	
+.xia{
+	border-bottom:1px solid #d6d6d6;
+	}                             /*细分割线 统一类*/
+.you{
+	border-right:1px solid #d6d6d6;
+	}                             /*细分割线 统一类*/
+	
+	
+.goods_paddingright{
+	padding-right:20px;
+	}
+.goods_paddingtop{
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-bottom:10px;
+	}
+.goods_paddingtop img{
+	border:#FFF 1px solid;
+	}
+.goods_paddingtop a:hover img{
+	border:#F00 1px solid;
+	}
+
+                               /*商品描述急麦包价 字体 统一类*/
+.goods_miaoshu{
+	color:#888;
+	font-size:12px;
+	height:40px;
+	vertical-align:top;
+	text-align:left;
+	font-family:"微软雅黑";
+	}                        
+.goods_miaoshu a{
+	text-decoration:none;
+	color:#888;
+	font-family:"微软雅黑";
+	}
+.goods_miaoshu a:hover{
+	color:#F00;}
+                              /*商品描述急麦包价 字体 统一类*/
+.goods_price{
+	margin-right:10px;
+	font-size:12px;
+	text-align:left;
+	font-family:"微软雅黑";
+	color:#F00;
+	font-weight:bolder;
+	vertical-align:top;
+	}                         /*商品价格 字体 统一类*/
+.goods_tejia{
+	font-size:10px;
+	text-align:left;
+	font-family:"微软雅黑";
+	color:#b1b1b1;
+	font-weight:bold;
+	vertical-align:top;
+	}                        /*特价原价价格  字体 统一设置*/
+	
+.red{
+	color:#F00 !important;
+	text-align:right;
+}                            /*对即可获得5元现金券 颜色 设置*/
+
+
+.gundong{
+	width:193px;
+	height:258px;
+	background-color:#f5f5f5;
+	border:1px solid #d6d6d6;
+	float:left;
+	margin:20px 10px 20px 10px;
+	}                        /*对滚动 外层 div 设置*/
+.gundongpic{
+	text-align:center;
+	vertical-align:middle;
+	height:195px;
+	}                        /*对滚动 图片 所在单元格设置*/          
+.gundongpic img{
+	width:130px;
+	height:175px;
+	}                        /*对滚动 图片 大小 设置*/ 
+.gundongtext{
+	border:0;
+	font-size:12px;
+	color:#5c5c5c;
+	height:35px;
+	}                        /*对滚动 描述 设置*/
+.gundongfrom{
+	font-size:12px;
+	font-weight:bold;
+	color:#F00;
+	height:25px;
+	vertical-align:middle;
+	}                        /*对滚动 来源 设置*/
+	
+	
+	
+	
+#top{
+	height:190px;
+	width:100%px;
+	background-color:#F00;}
+
+#banner1{
+	height:70px;
+	width:960px;
+	margin:10px auto;
+	}                      /* 第一个广告位的div设置*/
+	
+#banner2{
+	width:960px;
+	margin:0px auto 10px auto;
+	}                      /*第二个广告位最外层div设置*/
+	
+	#banner2_left{
+		width:698px;
+		height:338px;
+		border:1px solid #d5d5d5;
+		float:left;
+	}                      /*第二个广告位左侧div设置*/
+	#banner2_right{
+		width:248px;
+		height:338px;
+		float:left;
+		margin:0px 0px 0px 10px;
+		}                  /*第二个广告位右侧div设置*/
+		
+		#banner2_right_1{
+			width:248px;
+			height:138px;
+			margin-bottom:10px;
+			}             /*第二个广告位右侧  上部 选项卡 div设置*/
+		#banner2_right_2{
+			width:248px;
+			height:188px;
+			border:1px solid #d5d5d5;
+			}           /*第二个广告位右侧  下部 box div设置*/
+			/*#banner2_box1{
+				width:124px;
+				height:94px;
+				float:left;
+				border-bottom:1px solid #d5d5d5;
+				border-right:1px solid #d5d5d5;}
+			#banner2_box2{
+				width:124px;
+				height:94px;
+				float:left;}
+			#banner2_box3{
+				width:124px;
+				height:94px;
+				float:left;}
+			#banner2_box4{
+				width:124px;
+				height:94px;
+				float:left;
+				border-top:1px solid #d5d5d5;
+				border-left:1px solid #d5d5d5;}
+				*/
+/*热门分类开始*/
+#hotpartition{
+	width:960px;
+	height:240px;
+	margin:0px auto 10px auto;
+	padding-top:10px;
+	clear:both;
+	}                              /*热门分类 最外层 div设置*/
+	
+	#hotpartition_left{
+		height:240px;
+		width:700px;
+		float:left;
+		}                         /*热门分类 左侧 div设置*/
+		#hotpartition_left_biaoti{
+			height:38px;
+			width:700px;
+			border-bottom:2px solid #373737;
+			margin-bottom:10px;
+			}                    /*热门分类 左侧 标题设置*/
+			.hot_floor{
+				color:#F00;
+				text-align:left;
+				font-size:12px;
+				vertical-align:bottom;
+				padding-bottom:5px;
+				}               /*热门分类 左侧 标题 楼层设置*/
+			.hot_floor_name{
+				color:#333;
+				font-family:tahoma,verdana,arial,helvetica,sans-serif;
+				font-size:17px;
+				vertical-align:bottom;
+				font-weight:bold;
+				}
+		#hotpartition_left_neirong{
+			width:678px;
+			height:168px;
+			border:1px solid #d5d5d5;
+			padding:10px;
+			}                    /*热门分类 左侧 内容 div设置*/
+			#hotpartition_left_neirong .hotpic{
+				text-align:left;
+				width:78px;
+				height:80px;
+				}               /*热门分类 左侧 内容 图片所在单元格设置*/
+			#hotpartition_left_neirong .hotneirong{
+				height:26px;
+				text-align:left;
+				vertical-align:middle;
+				}              /*热门分类 左侧 内容 文字所在单元格  文本设置*/
+			 .hotneirong a{
+				font-size:12px;
+				color:#333333;
+				margin-right:5px;
+				text-decoration:none;
+				}             /*热门分类 左侧 内容 伪类设置*/
+			 .hotneirong a:hover{
+				color:#F00;
+				}             /*热门分类 左侧 内容 伪类设置*/
+				
+				
+	#hotpartition_right{
+		width:248px;
+		height:238px;
+		float:left;
+		margin-left:10px;
+		border:1px solid #d5d5d5;
+		}                    /*热门分类 右侧div 设置*/
+	
+/*热门分类结束*/
+
+#banner3{
+	width:960px;
+	height:70px;
+	margin:0px auto 10px auto;
+	}                        /*广告3部分div设置*/
+	
+/*第一层 设置 开始*/
+#floor1{
+	width:960px;
+	height:490px;
+	margin:0px auto 10px auto;
+	}                        /*第一层内容 外层div 设置*/
+	#floor1_left{
+		width:295px;
+		height:490px;
+		margin-right:5px;
+		float:left;
+		}                    /*第一层内容 左侧div 设置*/
+	#floor1_main{
+		width:460px;
+		height:500px;
+		float:left;
+		}                  /*第一层内容 主体div 设置*/
+		#floor1_main img{
+			border:1px solid #d5d5d5;
+			}              /*第一层内容 主体 图片边框 设置*/
+	#floor1_right{
+		height:500px;
+		width:200px;
+		float:left;
+		}                  /*第一层内容 右侧div 设置*/
+	    #floor1_right img{
+			margin:0px 0px 5px 5px;
+			}              /*第一层内容 图片距离 设置*/
+/*第一层 设置 结束*/
+#floor2_tupian{
+	height:366px;
+	width:960px;
+	margin:0px auto 5px auto;
+	}                         /*第二层 图片div 设置*/
+	#floor2_tupian img{
+		border:0px;
+		}                     /*第二层 图片边框为0 设置*/
+		
+#floor2_logo{
+	width:960px;
+	height:147px;
+	margin:0px auto 10px auto;
+	}                         /*第二层 logo div 设置*/
+
+	#floor2_logo img{
+		border:0;
+		}                     /*第二层 图片边框 设置*/
+		
+#floor2_banner{
+	width:960px;
+	height:70px;
+	margin:0px auto 10px auto;
+	}                        /*第二层 广告 div 设置*/
+	
+		
+/*第二层 设置 结束*/
+
+/*第三层 设置 开始*/
+#floor3_tupian{
+	width:960px;
+	height:330px;
+	margin:0px auto 10px auto;
+	}                         /*第三层 图片部分 div 设置*/
+#floor3_tupian img{
+	border:0px;}                  
+	#floor3_left{
+		height:330px;
+		width:280px;
+		margin-right:5px;
+		float:left;
+		}                    /*第三层 图片左侧部分 div 设置*/
+	#floor3_main{
+		height:330px;
+		width:465px;
+		margin-right:10px;
+		float:left;
+		}                    /*第三层 图片中间部分 div 设置*/
+		
+	#floor3_right{
+		height:330px;
+		width:200px;
+		float:left;
+		}                    /*第三层 图片右边部分 div 设置*/
+		
+		
+#floor3_gooods{
+	width:960px;
+	height:775px;
+	margin:0px auto 10px auto;
+	border-bottom:1px solid #dedede;
+	}                       /*第三层 商品部分 div 设置*/
+
+/*第三层 设置 结束*/
+/*第四层 设置 开始*/
+#floor4_tupian{
+	width:960px;
+	height:330px;
+	margin:0px auto 10px auto;
+	}                       /*第四层 图片部分 div 设置*/
+#floor4_tupian img{
+	border:0px;}                  
+	#floor4_left{
+		height:330px;
+		width:280px;
+		margin-right:5px;
+		float:left;
+		}                   /*第四层 图片左侧部分 div 设置*/
+	#floor4_main{
+		height:330px;
+		width:465px;
+		margin-right:10px;
+		float:left;
+		}                   /*第四层 图片中间部分 div 设置*/
+	#floor4_right{
+		height:330px;
+		width:200px;
+		float:left;
+		}                  /*第四层 图片右边部分 div 设置*/
+#floor4_gooods{
+	width:960px;
+	height:525px;
+	margin:0px auto 10px auto;
+	}                      /*第四层 商品部分 div 设置*/
+
+/*第四层 设置 结束*/
+/*特价 设置 开始*/
+#tejia{
+	width:960px;
+	height:560px;
+	margin:0px auto 10px auto;
+	
+	}                     /*特价部分 最外层 div 设置*/
+	#tejia_left{
+		width:700px;
+		height:560px;
+		margin-right:10px;
+		float:left;
+		border-bottom:1px solid #dedede;
+		}                  /*特价部分 左侧 div 设置*/
+		#tejia_left_floor{
+			width:700px;
+			height:38px;
+			border-bottom:2px solid #373737;
+			margin:0px auto 10px auto;
+			}               /*特价部分 左侧 楼层 div 设置*/
+			.tejia_floor{
+				width:25px;
+				height:38px;
+				color:#F00;
+				float:left;
+				font-size:12px;
+				line-height:50px;
+				font-weight:bold;
+				}           /*特价部分 左侧 楼层■ 设置*/
+	#tejia_right{
+		width:250px;
+		height:560px;
+		float:left;
+		}                    /*特价部分 右侧 div 设置*/
+		#tejia_right_floor{
+			width:250px;
+			height:38px;
+			border-bottom:2px solid #373737;
+			margin-bottom:10px;
+			}                 /*特价部分 右侧 楼层 div 设置*/
+		#tiejia_right_shangpin{
+			width:243px;
+			height:508px;
+			border:1px solid #dedede;
+			}
+		
+/*特价 设置 结束*/
+/*尾部 设置 开始*/
+#maiyoushaibao{
+	width:960px;
+	height:340px;
+	margin:0px auto 40px auto;
+	}                          /*对麦友晒包 最外层 div 设置*/
+  #maiyoushaibao_left{
+	  width:700px;
+	  height:340px;
+	  margin-right:10px;
+	  float:left;
+	  }
+	#floor_maiyoushaibao{
+		width:700px;
+		height:37px;
+		position:relative;
+		}                     /*对麦友晒包 左侧楼层 div 设置*/
+	    #shaibao_logo{
+			width:129px;
+			height:37px;
+			position:absolute;
+			top:11px;}        /*对麦友晒包  logo span 设置*/
+		#shaibaoneirong{
+			width:500px;
+			height:10px;
+			position:absolute;
+			left:149px;
+			bottom:8px;
+			}                /*对麦友晒包  logo后内容 span 设置*/
+	#maiyoushaibao_gundong{
+		width:698px;
+		height:298px;
+		border:1px solid #F00;
+		}                      /*麦友晒包  滚动内容 div 设置*/
+		#demo {
+		background: #FFF;
+		overflow:hidden;
+		border: 1px dashed #CCC;
+		width: 698px;
+		height:298px;
+		}
+		#demo img {
+		border: 3px solid #F2F2F2;
+		}
+		#indemo {
+		float: left;
+		width: 800%;
+		}
+		#demo1 {
+		float: left;
+		}
+		#demo2 {
+		float: left;
+		}
+  #maiyoushaibao_right{
+	  width:240px;
+	  height:340px;
+	  margin-right:10px;
+	  float:left;
+	  }                         /*麦友晒包  右侧 div 设置*/
+	#maiyoushaibao_righ_floor{
+		width:250px;
+		height:38px;
+		border-bottom:2px solid #373737;
+		margin-bottom:10px;
+		}                      /*麦友晒包  右侧 导航 div 设置*/
+		
+	#news{
+		width:248px;
+		height:163px;
+		border:1px solid #dedede;
+		margin-bottom:10px;
+		}                      /*麦友晒包  右侧 新闻 div 设置*/
+	#news .news_biaoti{
+		font-size:15px;
+		color:#F00;
+		}                      /*麦友晒包  右侧 新闻 标题 设置*/
+	.news_biaoti a{
+		color:#F00;
+		text-decoration:none;
+		}
+	#news_tb{
+		margin-top:10px;
+		}                      /*麦友晒包  右侧 新闻 表格上留白 设置*/
+	
+	#maiyouhufang{
+		width:250px;
+		height:113px;
+		}                     /*麦友晒包  右侧 麦友互访 div 设置*/
+		#maiyouhufang_tb{
+			background-color:#edecea;
+			}                /*麦友晒包  右侧 麦友互访 表格背景色 设置*/
+		#maiyouhufang_tb .xuxian{
+			border-bottom:#999 dashed 1px;
+			}                /*麦友晒包  右侧 麦友互访 虚线 设置*/
+		                
+		#maiyouhufang .dingyue{
+			font-family:"宋体";
+			color:#f00;
+			font-size:12px;
+			}                 /*麦友晒包  右侧 麦友互访 订阅字体设置*/
+		#maiyouhufang .dingyue a{
+			font-family:"宋体";
+			color:#f00;
+			font-size:12px;
+			font-weight:bold;
+			text-decoration:none;
+			text-align:right;
+			}                /*麦友晒包  右侧 麦友互访 订阅字体设置*/
+		#dingyuebox{
+			width:130px;
+			height:15px;
+			margin-bottom:3px;
+			}               /*麦友晒包  右侧 麦友互访 订阅文本框设置*/
+		#dingyueanniu{
+			width:40px;
+			height:20px;
+			background-color:#666666;
+			color:#FFF;
+			font-size:11px;
+			border:0;
+			margin-bottom:3px;
+			}                /*麦友晒包  右侧 麦友互访 订阅按钮设置*/
+/*尾部 设置 结束*/
+/*我的消息 设置 开始*/
+#message{
+	width:188px;
+	height:30px;
+	position:absolute;
+	bottom:0px;
+	right:3px;
+	background-image:url(../images/xiaoxibg.gif);
+	position:fixed;
+	font-size:12px;
+	border:1px solid #c0c0c0;
+	}
+#message a{
+	font-size:12px;
+	color:#000;
+	text-decoration:none;
+	}
+/*我的消息 设置 结束*/
+			
+
+
+
+
+	
+	
+
+	
+	
+	
+
+				
+				
+	 
+				
+			

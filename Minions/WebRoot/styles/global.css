@@ -1,0 +1,18 @@
+@charset "gb2312";
+/* CSS Document */
+body{
+	padding:0px;
+	margin:0px;
+	font-family:"Î¢ÈíÑÅºÚ";
+	}
+.tables{
+	font-family: "Î¢ÈíÑÅºÚ";
+	font-size: 14px;
+	color: #888888;
+	text-align: center;
+}
+.divs{
+	width:1000px;
+	margin:auto;
+	padding:50px; 
+}

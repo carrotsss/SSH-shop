@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+#querenshouhuorenxinxi{
+	background-color:#F00;
+	color:#FFF;
+	font-size:14px;
+	width:150px;
+	height:40px;
+	border:0;
+	}
+
+.tishineirong{
+	color:#F00;
+	font-family:"微软雅黑";
+	font-size:13px;}
+#top{
+	margin:0px auto 20px auto;
+	padding:0px;
+	width:900px;
+	}
+
+#tianxieheduixinxi{
+	margin:0px auto 10px auto;
+	padding:0px;
+	width:900px;
+
+	
+    }
+#tianxieheduixinxi_main_1{
+	margin:20px auto ;
+	
+	
+	
+	
+	}
+#tianxieheduixinxi_main_2{
+	margin:20px auto ;
+	border:1px #dddddd solid;
+	height:800px;
+	
+	}
+#tianxieheduixinxi_main_2_1{
+	margin:20px auto ;
+	border:1px #dddddd;
+	font-size:small;
+	}
+#tianxieheduixinxi_main_2_2{
+	
+		}
+#tianxieheduixinxi_main_3{
+	margin:20px auto ;
+	}
+#tianxieheduixinxi_main_3_3{
+	margin:20px;
+		}
+#tianxieheduixinxi_main_4{
+	margin:20px auto ;
+	}
+#tianxieheduixinxi_main_4_3{}
+#heduixinxi_footer{
+	background-color:#ededed;
+	}
+#tb{
+	border:1px solid #dddddd;
+	font-family:"微软雅黑";
+	font-size:14px;}
